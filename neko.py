@@ -1,7 +1,9 @@
 # discord.pyのインポート
 import discord
 client = discord.Client()
-
+# ねこくんのトークン設定
+TOKEN =　'NjgxNzQ3OTk1MTU0NDQ4NDU4.XlS9dA.YurRox1N86zzL7l4hjZGzqdn3gw'
+client = discord.Client()
 
 # ログイン処理
 @client.event
@@ -20,6 +22,3 @@ async def on_message(message):
        return
    if message.content == 'ねこぴっぴ':
        await message.channel.send('なんですか,どーされましたかー？,呼んだ？')
-
-# ねこくんのトークン設定
-client.run("NjgxNzQ3OTk1MTU0NDQ4NDU4.XlS9dA.YurRox1N86zzL7l4hjZGzqdn3gw")
